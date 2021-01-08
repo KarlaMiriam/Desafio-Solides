@@ -3,8 +3,10 @@ require 'selenium-webdriver'
 Selenium::WebDriver::Chrome.driver_path="C:/chromedriver.exe"
 
 @driver = Selenium::WebDriver.for :chrome
-@driver.get "https://homol.solides.jobs/login?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzbHVnIjoicGFkYXJpYWRvYmFyYW8iLCJhdXRoZW50aWNhdGVkIjpmYWxzZSwiZGVzY3JpcHRpb25WYWNhbmN5SWQiOiIiLCJvcmlnaW4iOiJodHRwczovL3BhZGFyaWFkb2JhcmFvLmhvbW9sLnNvbGlkZXMuam9icyIsImlhdCI6MTYwOTk4NDc2OX0.q8MvNPvjrBthWfrNHnivvhzV0dmNWu7HAIce9XmUymc"
+@driver.get "https://padariadobarao.homol.solides.jobs"
 
+
+@driver.find_element(:id, "registerTalentBank").click
 
 @driver.find_element(:id, "register").click
 
