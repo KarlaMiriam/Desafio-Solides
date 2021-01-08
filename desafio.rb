@@ -24,7 +24,12 @@ Selenium::WebDriver::Chrome.driver_path="C:/chromedriver.exe"
 
 @driver.find_element(:xpath, "//*[@id='root']/div/div[2]/div[2]/div/form/div[6]/button/div").click
 
-@driver.find_element(:xpath, "//*[@id='root']/div/div[2]/div[2]/div/form/div[6]/button/div").displayed?
+TestConfirm = @driver.find_element(:xpath, "//*[@id='root']/div/div[2]/div[2]/div/form/div[6]/button/div").displayed?
+
+if TestConfirm = true
+	print 'Teste não passou! Usuario não cadastrado'
+end
+
 
 
 
